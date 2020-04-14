@@ -1,0 +1,6 @@
+C:\Users\PC\source\repos\DiscordMultiSniper\DiscordMultiSniper\DiscordMultiSniper\bin\Debug\netcoreapp3.1\DiscordMultiSniper.exe
+C:\Users\PC\source\repos\DiscordMultiSniper\DiscordMultiSniper\DiscordMultiSniper\bin\Debug\netcoreapp3.1\Discord.dll
+C:\Users\PC\source\repos\DiscordMultiSniper\DiscordMultiSniper\DiscordMultiSniper\obj\Debug\netcoreapp3.1\DiscordMultiSniper.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\DiscordMultiSniper\DiscordMultiSniper\DiscordMultiSniper\obj\Debug\netcoreapp3.1\DiscordMultiSniper.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\DiscordMultiSniper\DiscordMultiSniper\DiscordMultiSniper\obj\Debug\netcoreapp3.1\DiscordMultiSniper.AssemblyInfo.cs
+C:\Users\PC\source\repos\DiscordMultiSniper\DiscordMultiSniper\DiscordMultiSniper\obj\Debug\netcoreapp3.1\DiscordMultiSniper.csproj.CopyComplete
