@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Discord;
+using Discord.Gateway;
 using DiscordMultiSniper.Models;
 namespace DiscordMultiSniper.Utilities
 {
@@ -40,7 +41,7 @@ namespace DiscordMultiSniper.Utilities
             return false;
         }
 
-        public static Models.Nitro GetNitroInfo(string nitroCode, DiscordClient client)
+        public static Models.Nitro GetNitroInfo(string nitroCode, DiscordSocketClient client)
         {
             Models.Nitro nitro = new Models.Nitro();
             string nitroInfo = client.GetNitroGift(nitroCode).SubscriptionPlan.Name;
@@ -95,6 +96,22 @@ namespace DiscordMultiSniper.Utilities
             return false;
         }
 
-
+        public static bool JoinGiveaway(DiscordSocketClient client, MessageEventArgs args)
+        {
+            string serverName = client.GetGuild(args.Message.GuildId.Value).Name;
+            try
+            {
+                client.AddMessageReaction(client.GetChannel(args.Message.ChannelId).Id, args.Message.Id, "\ud83c\udf89");
+                StringBuilder sbGiveawayNotification = new StringBuilder("[Joined giveaway] Server: ");
+                sbGiveawayNotification.Append(serverName);
+                Console.WriteLine(sbGiveawayNotification.ToString());
+                return true;
+            }
+            catch
+            {
+                Console.WriteLine("[ERROR] Could not join to the giveaway. Server:{0} Date:{1}", serverName, DateTime.Now);
+                return false;
+            }
+        }
     }
 }
